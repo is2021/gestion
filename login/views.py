@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 class LoginFormView(LoginView):
-    template_name = 'login.html'
+    template_name = 'templates/login.html'
 
     def dispatch(self, request, *args, **kwargs):
         print(request.user)
@@ -19,4 +19,4 @@ class LoginFormView(LoginView):
 
 
 def index(request):
-    return render(request, 'prueba.html')
+    return render(request, 'templates/prueba.html')
