@@ -19,4 +19,4 @@ class LoginFormView(LoginView):
 
 
 def index(request):
-    return render(request, 'templates/prueba.html')
+    return render(request, 'login.html')
